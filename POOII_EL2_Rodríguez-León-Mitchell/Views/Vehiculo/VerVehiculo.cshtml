@@ -1,0 +1,58 @@
+﻿@model POOII_EL2_Rodríguez_León_Mitchell.Models.Vehiculo
+
+@{
+    ViewBag.Title = "VerVehiculo";
+}
+
+<h2>VerVehiculo</h2>
+
+<div>
+    <h4>Vehiculo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Placa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Placa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Año)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Año)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdMarca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdMarca)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "ActualizarVehiculo", new { id = Model.ID }) |
+    @Html.ActionLink("Volver a la listat", "ListarVehiculos")
+</p>

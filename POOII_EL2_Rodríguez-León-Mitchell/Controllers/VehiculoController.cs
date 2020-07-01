@@ -32,5 +32,17 @@ namespace POOII_EL2_Rodríguez_León_Mitchell.Controllers
             int resultado = adoVehiculo.Insertar(v);
             return RedirectToAction("ListarVehiculos");
         }
+
+        public ActionResult EliminarVehiculo(int id)
+        {
+            int resultado = adoVehiculo.Eliminar(id);
+            return RedirectToAction("ListarVehiculos");
+        }
+
+        public ActionResult VerVehiculo(int id)
+        {
+            Vehiculo v = adoVehiculo.Obtener(id);
+            return View(v);
+        }
     }
 }
