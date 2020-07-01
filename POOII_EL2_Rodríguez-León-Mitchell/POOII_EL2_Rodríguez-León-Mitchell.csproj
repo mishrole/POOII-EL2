@@ -119,14 +119,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADO\MarcaADO.cs" />
+    <Compile Include="ADO\VehiculoADO.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\VehiculoController.cs" />
     <Compile Include="Controllers\ViajesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Marca.cs" />
+    <Compile Include="Models\Vehiculo.cs" />
+    <Compile Include="Models\VehiculoParcial.cs" />
     <Compile Include="Models\Viaje.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -275,6 +281,7 @@
     <Content Include="Views\Consultas\BuscarViajesPorAño.cshtml" />
     <Content Include="Views\Consultas\BuscarViajesPorConductorYPartida.cshtml" />
     <Content Include="Views\Consultas\BuscarViajesPorVehiculoYPartida.cshtml" />
+    <Content Include="Views\Vehiculo\ListarVehiculos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

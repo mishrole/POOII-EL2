@@ -1,11 +1,27 @@
+-- Listar Marcas
+CREATE PROCEDURE SP_MARCAS_LISTAR
+AS
+	SELECT IdMarca, Nombre
+	FROM dbo.Marca
+GO
+
+-- Listado General de Vehículos
 CREATE PROCEDURE SP_VEHICULOS_LISTAR
 AS
-	SELECT IdVehiculo, Placa FROM dbo.Vehiculo
+	SELECT
+	V.IdVehiculo,
+	V.Placa,
+	V.Año,
+	V.Modelo,
+	V.IdMarca,
+	M.Nombre
+	FROM dbo.Vehiculo AS V INNER JOIN dbo.Marca AS M
+	ON V.IdMarca = M.IdMarca
 GO
 
 -- Registro de nuevo Vehículo
 
-CREATE PROCEDURE SP_VEHICHULOS_REGISTRAR
+CREATE PROCEDURE SP_VEHICULOS_REGISTRAR
 @Placa varchar(20),
 @Año int,
 @Modelo varchar(50),
@@ -29,9 +45,9 @@ AS
 	WHERE IdVehiculo = @IdVehiculo
 GO
 
--- Detalle de datos de Vehículo
+-- Detalle de Vehículo
 
-CREATE PROCEDURE SP_VEHICULOS_DETALLE
+CREATE PROCEDURE SP_VEHICULOS_OBTENER
 @IdVehiculo int
 AS
 	SELECT
