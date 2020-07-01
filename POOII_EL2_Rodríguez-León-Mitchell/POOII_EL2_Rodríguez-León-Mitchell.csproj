@@ -282,6 +282,7 @@
     <Content Include="Views\Consultas\BuscarViajesPorConductorYPartida.cshtml" />
     <Content Include="Views\Consultas\BuscarViajesPorVehiculoYPartida.cshtml" />
     <Content Include="Views\Vehiculo\ListarVehiculos.cshtml" />
+    <Content Include="Views\Vehiculo\RegistrarVehiculo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
