@@ -1,0 +1,30 @@
+﻿<!--    MODELO      -->
+
+@model IEnumerable<POOII_EL2_Rodríguez_León_Mitchell.Models.Viaje>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Origen</th>
+        <th>Destino</th>
+        <th>Vehiculo</th>
+        <th>Conductor</th>
+        <th>Fecha de Partida</th>
+        <th>Fecha de Llegada</th>
+    </tr>
+
+    <!--    LISTA DE PEDIDOS    -->
+
+    @foreach (var p in Model)
+    {
+<tr>
+    <td>@Html.DisplayFor(modelitem => p.ViajeId)</td>
+    <td>@Html.DisplayFor(modelitem => p.Origen)</td>
+    <td>@Html.DisplayFor(modelitem => p.Destino)</td>
+    <td>@Html.DisplayFor(modelitem => p.VehiculoId)</td>
+    <td>@Html.DisplayFor(modelitem => p.Conductor)</td>
+    <td>@Html.DisplayFor(modelitem => p.FechaPartida)</td>
+    <td>@Html.DisplayFor(modelitem => p.FechaLlegada)</td>
+</tr>
+    }
+</table>
