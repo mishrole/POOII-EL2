@@ -25,5 +25,12 @@ namespace POOII_EL2_Rodríguez_León_Mitchell.Controllers
             ViewBag.marcas = adoMarca.Listar();
             return View(new Vehiculo());
         }
+
+        [HttpPost]
+        public ActionResult RegistrarVehiculo(Vehiculo v)
+        {
+            int resultado = adoVehiculo.Insertar(v);
+            return RedirectToAction("ListarVehiculos");
+        }
     }
 }

@@ -1,7 +1,7 @@
 ﻿@model POOII_EL2_Rodríguez_León_Mitchell.Models.Vehiculo
 
 @{
-    ViewBag.Title = "RegistrarVehiculo";
+    ViewBag.Title = "Registrar Vehiculo";
 }
 
 <h2>RegistrarVehiculo</h2>
@@ -43,7 +43,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.IdMarca, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.IdMarca, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.DropDownListFor(model => model.IdMarca, new SelectList(ViewBag.marcas, "IdMarca", "Nombre"), new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.IdMarca, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -57,7 +57,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Volver", "Index")
 </div>
 
 @section Scripts {
