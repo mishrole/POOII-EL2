@@ -9,9 +9,9 @@ La empresa de transporte "CONSORCIO LEYVA" ha decidido llevar el control de todo
 
 ###Parte 1:
 
-	- []	Listado de **Viajes** por **Año** (*según fecha de partida*).
-	- []	Listado de **Viajes** por **Conductor** y **Año** (*según fecha de partida*).
-	- []	Listado de **Viajes** por **Vehículo** y **Año** (*según la fecha de partida*).
+	- [X]	Listado de **Viajes** por **Año** (*según fecha de partida*).
+	- [X]	Listado de **Viajes** por **Conductor** y **Año** (*según fecha de partida*).
+	- [X]	Listado de **Viajes** por **Vehículo** y **Año** (*según fecha de partida*).
 
 	Tener en cuenta:
 

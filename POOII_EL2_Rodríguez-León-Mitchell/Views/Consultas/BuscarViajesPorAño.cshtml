@@ -1,0 +1,17 @@
+﻿@model IEnumerable<POOII_EL2_Rodríguez_León_Mitchell.Models.Viaje>
+
+@{
+    ViewBag.Title = "Buscar Viajes Por Año";
+}
+
+<h2>Buscar Viajes Por Año</h2>
+
+@using (Html.BeginForm())
+{
+    <strong>Ingrese el año:</strong>
+    @Html.TextBox("partida")
+    <button>Buscar</button>
+}
+
+<!--    Embed PartialView   -->
+@Html.Partial("_PartialViajes")

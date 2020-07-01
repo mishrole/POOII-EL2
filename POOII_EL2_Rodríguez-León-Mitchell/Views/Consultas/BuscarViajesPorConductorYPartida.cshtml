@@ -1,0 +1,19 @@
+﻿@model IEnumerable<POOII_EL2_Rodríguez_León_Mitchell.Models.Viaje>
+
+@{
+    ViewBag.Title = "Buscar Viajes Por Conductor Y Partida";
+}
+
+<h2>Buscar Viajes Por Conductor Y Partida</h2>
+
+@using (Html.BeginForm())
+{
+    <strong>Ingrese el nombre del conductor:</strong>
+    @Html.TextBox("conductor")
+    <strong>Ingrese el año:</strong>
+    @Html.TextBox("partida")
+    <button>Buscar</button>
+}
+
+<!--    Embed PartialView   -->
+@Html.Partial("_PartialViajes")

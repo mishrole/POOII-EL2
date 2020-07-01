@@ -122,7 +122,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\ConsultasController.cs" />
+    <Compile Include="Controllers\ViajesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -272,10 +272,12 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Shared\_PartialViajes.cshtml" />
+    <Content Include="Views\Consultas\BuscarViajesPorAño.cshtml" />
+    <Content Include="Views\Consultas\BuscarViajesPorConductorYPartida.cshtml" />
+    <Content Include="Views\Consultas\BuscarViajesPorVehiculoYPartida.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Consultas\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
