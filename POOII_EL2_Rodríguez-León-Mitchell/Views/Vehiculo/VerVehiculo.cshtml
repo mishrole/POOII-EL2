@@ -1,22 +1,15 @@
 ﻿@model POOII_EL2_Rodríguez_León_Mitchell.Models.Vehiculo
 
 @{
-    ViewBag.Title = "VerVehiculo";
+    ViewBag.Title = "Ver Vehículo";
 }
 
-<h2>VerVehiculo</h2>
+<h2>Ver Vehículo</h2>
 
 <div>
-    <h4>Vehiculo</h4>
+    <h4>Vehículo: @Model.ID</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Marca)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Marca)
-        </dd>
 
         <dt>
             @Html.DisplayNameFor(model => model.Placa)
@@ -54,5 +47,5 @@
 </div>
 <p>
     @Html.ActionLink("Editar", "ActualizarVehiculo", new { id = Model.ID }) |
-    @Html.ActionLink("Volver a la listat", "ListarVehiculos")
+    @Html.ActionLink("Volver a la lista", "ListarVehiculos")
 </p>

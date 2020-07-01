@@ -3,6 +3,7 @@ using POOII_EL2_Rodríguez_León_Mitchell.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Web;
 using System.Web.Mvc;
 
@@ -43,6 +44,21 @@ namespace POOII_EL2_Rodríguez_León_Mitchell.Controllers
         {
             Vehiculo v = adoVehiculo.Obtener(id);
             return View(v);
+        }
+
+        // GET (Generar vista desde aquí)
+        public ActionResult ActualizarVehiculo(int id)
+        {
+            Vehiculo v = adoVehiculo.Obtener(id);
+            ViewBag.marcas = adoMarca.Listar();
+            return View(v);
+        }
+
+        [HttpPost]
+        public ActionResult ActualizarVehiculo(Vehiculo v)
+        {
+            int resultado = adoVehiculo.Actualizar(v);
+            return RedirectToAction("ListarVehiculos");
         }
     }
 }
