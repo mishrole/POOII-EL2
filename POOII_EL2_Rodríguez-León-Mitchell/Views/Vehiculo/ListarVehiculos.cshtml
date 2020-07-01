@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<POOII_EL2_Rodríguez_León_Mitchell.Models.Vehiculo>
 
 @{
-    ViewBag.Title = "Vehiculos";
+    ViewBag.Title = "Vehículos";
 }
 
-<h2>ListarVehiculos</h2>
+<h2>Listar Vehículos</h2>
 
 <p>
-    @Html.ActionLink("Nuevo", "RegistrarVehiculo")
+    @Html.ActionLink("Nuevo", "RegistrarVehiculo", null, new { @class = "btn btn-primary" })
 </p>
 <table class="table">
     <tr>

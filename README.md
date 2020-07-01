@@ -9,40 +9,34 @@ La empresa de transporte "CONSORCIO LEYVA" ha decidido llevar el control de todo
 
 Parte 1:
 
-	- [x] Listado de Viajes por Año (según fecha de partida).
-	- [x] Listado de Viajes por Conductor y Año (según fecha de partida).
-	- [x] Listado de Viajes por Vehículo y Año (según fecha de partida).
+- [x] Listado de Viajes por Año (según fecha de partida).
+- [x] Listado de Viajes por Conductor y Año (según fecha de partida).
+- [x] Listado de Viajes por Vehículo y Año (según fecha de partida).
 
 Tener en cuenta:
 
-	-	Use el patrón MVC en Visual C#.
-	-	Agregue las imágenes necesarias a la aplicación.
-	-	Implemente el archivo estilo.css, y defina los formatos adecuados en la presentación
-		de las diferentes ventanas de la aplicación.
-	-	Implemente una Template en la que se incluya un menú de opciones de todo el proyecto,
-		además de un banner y footer.
-	-	Implemente los Stored Procedures necesarios para la aplicación.
-	-	Implemente un Controller llamado ViajesController, y defina los Methods para realizar
-		los listados solicitados.
-	-	Implemente las Partial Views necesarias para la aplicación.
+- Use el patrón MVC en Visual C#.
+- Agregue las imágenes necesarias a la aplicación.
+- Implemente el archivo estilo.css, y defina los formatos adecuados en la presentación de las diferentes ventanas de la aplicación.
+- Implemente una Template en la que se incluya un menú de opciones de todo el proyecto, además de un banner y footer.
+- Implemente los Stored Procedures necesarios para la aplicación.
+- Implemente un Controller llamado ViajesController, y defina los Methods para realizar los listados solicitados.
+- Implemente las Partial Views necesarias para la aplicación.
 
 Parte 2:
 
-	- [x]	Listado de General de Vehículos
-	- [x]	Registro del nuevo Vehículo
-	- []	Actualización de datos del Vehículo
-	- []	Detalle de datos del Vehículo
-	- []	Eliminación de registro del Vehículo
+- [x] Listado de General de Vehículos
+- [x] Registro del nuevo Vehículo
+- [x] Actualización de datos del Vehículo
+- [x] Detalle de datos del Vehículo
+- [x] Eliminación de registro del Vehículo
 
 Tener en cuenta:
 
-	-	Use el patrón MVC en Visual C#.
-	-	Agregue las imágenes necesarias a la aplicación.
-	-	Implemente el archivo estilo.css, y defina los formatos adecuados en la presentación de las
-		diferentes ventanas de la aplicación.
-	-	Implemente una Template en la que se incluya un menú de opciones de todo el proyecto,
-		además de un banner y footer.
-	-	Implemente los Stored Procedures necesarios para la aplicación.
-	-	Implemente un Controller llamado VehiculoController, y defina los Methods para realizar
-		el CRUD de Vehículos.
-	-	Implemente las Views necesarias para la aplicación.
+- Use el patrón MVC en Visual C#.
+- Agregue las imágenes necesarias a la aplicación.
+- Implemente el archivo estilo.css, y defina los formatos adecuados en la presentación de las diferentes ventanas de la aplicación.
+- Implemente una Template en la que se incluya un menú de opciones de todo el proyecto, además de un banner y footer.
+- Implemente los Stored Procedures necesarios para la aplicación.
+- Implemente un Controller llamado VehiculoController, y defina los Methods para realizar el CRUD de Vehículos.
+- Implemente las Views necesarias para la aplicación.

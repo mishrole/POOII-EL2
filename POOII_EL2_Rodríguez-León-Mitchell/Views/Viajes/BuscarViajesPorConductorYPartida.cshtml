@@ -8,11 +8,13 @@
 
 @using (Html.BeginForm())
 {
-    <strong>Ingrese el nombre del conductor:</strong>
-    @Html.TextBox("conductor")
-    <strong>Ingrese el año:</strong>
-    @Html.TextBox("partida")
-    <button>Buscar</button>
+<div class="form-inline">
+    <strong class="mr-5">Ingrese el nombre del conductor:</strong>
+    @Html.TextBox("conductor", null, new { @class = "form-control col-sm-2 mt-4 mb-4 mr-5" })
+    <strong class="mr-5">Ingrese el año:</strong>
+    @Html.TextBox("partida", null, new { @class = "form-control col-sm-2 mt-4 mb-4 mr-5" })
+    <button class="btn btn-primary">Buscar</button>
+</div>
 }
 
 <!--    Embed PartialView   -->

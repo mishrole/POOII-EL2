@@ -3,28 +3,32 @@
 @model IEnumerable<POOII_EL2_Rodríguez_León_Mitchell.Models.Viaje>
 
 <table class="table">
-    <tr>
-        <th>ID</th>
-        <th>Origen</th>
-        <th>Destino</th>
-        <th>Vehiculo</th>
-        <th>Conductor</th>
-        <th>Fecha de Partida</th>
-        <th>Fecha de Llegada</th>
-    </tr>
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Origen</th>
+            <th scope="col">Destino</th>
+            <th scope="col">Vehiculo</th>
+            <th scope="col">Conductor</th>
+            <th scope="col">Fecha de Partida</th>
+            <th scope="col">Fecha de Llegada</th>
+        </tr>
+    </thead>
 
     <!--    LISTA DE PEDIDOS    -->
 
-    @foreach (var p in Model)
-    {
-<tr>
-    <td>@Html.DisplayFor(modelitem => p.ViajeId)</td>
-    <td>@Html.DisplayFor(modelitem => p.Origen)</td>
-    <td>@Html.DisplayFor(modelitem => p.Destino)</td>
-    <td>@Html.DisplayFor(modelitem => p.VehiculoId)</td>
-    <td>@Html.DisplayFor(modelitem => p.Conductor)</td>
-    <td>@Html.DisplayFor(modelitem => p.FechaPartida)</td>
-    <td>@Html.DisplayFor(modelitem => p.FechaLlegada)</td>
-</tr>
-    }
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelitem => p.ViajeId)</td>
+                <td>@Html.DisplayFor(modelitem => p.Origen)</td>
+                <td>@Html.DisplayFor(modelitem => p.Destino)</td>
+                <td>@Html.DisplayFor(modelitem => p.VehiculoId)</td>
+                <td>@Html.DisplayFor(modelitem => p.Conductor)</td>
+                <td>@Html.DisplayFor(modelitem => p.FechaPartida)</td>
+                <td>@Html.DisplayFor(modelitem => p.FechaLlegada)</td>
+            </tr>
+        }
+    </tbody>
 </table>
