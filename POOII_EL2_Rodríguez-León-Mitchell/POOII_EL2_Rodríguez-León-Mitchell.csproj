@@ -278,9 +278,9 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Shared\_PartialViajes.cshtml" />
-    <Content Include="Views\Consultas\BuscarViajesPorAño.cshtml" />
-    <Content Include="Views\Consultas\BuscarViajesPorConductorYPartida.cshtml" />
-    <Content Include="Views\Consultas\BuscarViajesPorVehiculoYPartida.cshtml" />
+    <Content Include="Views\Viajes\BuscarViajesPorAño.cshtml" />
+    <Content Include="Views\Viajes\BuscarViajesPorConductorYPartida.cshtml" />
+    <Content Include="Views\Viajes\BuscarViajesPorVehiculoYPartida.cshtml" />
     <Content Include="Views\Vehiculo\ListarVehiculos.cshtml" />
     <Content Include="Views\Vehiculo\RegistrarVehiculo.cshtml" />
   </ItemGroup>

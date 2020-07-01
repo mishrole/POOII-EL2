@@ -11,7 +11,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
-        @Html.ActionLink("Nombre de la aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        @Html.ActionLink("POOII-EL2", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,13 +21,16 @@
                     @Html.ActionLink("Inicio", "Index", "Home", null, new { @class = "nav-link" })
                 </li>
                 <li class="nav-item">
-                    @Html.ActionLink("Acerca de", "About", "Home", null, new { @class = "nav-link" })
+                    @Html.ActionLink("Vehiculo", "ListarVehiculos", "Vehiculo", null, new { @class = "nav-link" })
                 </li>
                 <li class="nav-item">
-                    @Html.ActionLink("Contacto", "Contact", "Home", null, new { @class = "nav-link" })
+                    @Html.ActionLink("Viajes por Año", "BuscarViajesPorAño", "Viajes", null, new { @class = "nav-link" })
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    @Html.ActionLink("Viajes por Conductor y Año", "BuscarViajesPorConductorYPartida", "Viajes", null, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Viajes por Vehículo y Año", "BuscarViajesPorVehiculoYPartida", "Viajes", null, new { @class = "nav-link" })
                 </li>
             </ul>
         </div>
