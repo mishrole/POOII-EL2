@@ -10,26 +10,26 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         @Html.ActionLink("POOII-EL2", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
+                <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
                     @Html.ActionLink("Inicio", "Index", "Home", null, new { @class = "nav-link" })
                 </li>
-                <li class="nav-item">
+                <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "ListarVehiculos" ? "active" : "")">
                     @Html.ActionLink("Vehiculo", "ListarVehiculos", "Vehiculo", null, new { @class = "nav-link" })
                 </li>
-                <li class="nav-item">
-                    @Html.ActionLink("Viajes por Año", "BuscarViajesPorAño", "Viajes", null, new { @class = "nav-link" })
+                <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "BuscarViajesPorAño" ? "active" : "")">
+                    @Html.ActionLink("Viajes", "BuscarViajesPorAño", "Viajes", null, new { @class = "nav-link" })
                 </li>
-                <li class="nav-item">
+                <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "BuscarViajesPorConductorYPartida" ? "active" : "")">
                     @Html.ActionLink("Viajes por Conductor y Año", "BuscarViajesPorConductorYPartida", "Viajes", null, new { @class = "nav-link" })
                 </li>
-                <li class="nav-item">
+                <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "BuscarViajesPorVehiculoYPartida" ? "active" : "")">
                     @Html.ActionLink("Viajes por Vehículo y Año", "BuscarViajesPorVehiculoYPartida", "Viajes", null, new { @class = "nav-link" })
                 </li>
             </ul>
@@ -37,6 +37,7 @@
     </nav>
 
     <div class="container body-content">
+
         @RenderBody()
         <hr />
         <footer>
