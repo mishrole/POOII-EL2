@@ -1,7 +1,6 @@
 # Programación Orientada a Objetos II
 
-Segunda Evaluación de Laboratorio
-Descargar el documento de la [Evaluación](https://github.com/mishrole/POOII-EL2/raw/master/1895_AC_PROGRAMACION%20ORIENTADA%20A%20OBJETOS%20II_NOCHE_T4GN_01_CL_2_CHINGA%20CASTRO%20DANIEL.pdf).
+Segunda Evaluación de Laboratorio. Descargar el documento de la [Evaluación](https://github.com/mishrole/POOII-EL2/raw/master/1895_AC_PROGRAMACION%20ORIENTADA%20A%20OBJETOS%20II_NOCHE_T4GN_01_CL_2_CHINGA%20CASTRO%20DANIEL.pdf).
 
 ## Contexto del Proyecto
 
