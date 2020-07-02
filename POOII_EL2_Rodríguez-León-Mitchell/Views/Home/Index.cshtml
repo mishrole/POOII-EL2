@@ -2,30 +2,81 @@
     ViewBag.Title = "Inicio";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h2>Programación Orientada a Objetos II</h2>
+        <p class="lead">Segunda Evaluación de Laboratorio</p>
+        <p><a href="https://github.com/mishrole/POOII-EL2/raw/master/1895_AC_PROGRAMACION%20ORIENTADA%20A%20OBJETOS%20II_NOCHE_T4GN_01_CL_2_CHINGA%20CASTRO%20DANIEL.pdf" class="btn btn-dark btn-md">Descargar Evaluación</a></p>
+    </div>
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
+    <div class="col-sm-12">
+        <h4>Contexto del Proyecto</h4>
+        <hr />
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            La empresa de transporte "CONSORCIO LEYVA" ha decidido llevar el control de todos sus procesos a una aplicación web,
+            la que facilitará la información a todas las áreas de la empresa. Para ello, se debe implementar una aplicación web que
+            permita consultar información desde su base de datos <b>POOII_CL2</b>.
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <div class="col-sm-12">
+        <h4>Consideraciones Generales</h4>
+        <hr />
+        <ul>
+            <li class="form-group">Use el patrón MVC en Visual C#</li>
+            <li class="form-group">Agregue las imágenes necesarias a la aplicación</li>
+            <li class="form-group">Implemente el archivo estilo.css</li>
+            <li class="form-group">Defina los formatos adecuados en la presentación de las diferentes vistas</li>
+            <li class="form-group">Implemente una Template en la que se incluya: menu, banner y footer</li>
+            <li class="form-group">Implemente los Stored Procedures necesarios</li>
+            <li class="form-group">Implemente las Views y Partial Views necesarias</li>
+        </ul>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="col-sm-12">
+        <h4>Parte 1</h4>
+        <hr />
+        <p>Implemente un Controller llamado <i>ViajesController</i>, y defina los Methods para realizar los listados de Viajes <i>según Fecha de Partida</i>.</p>
+        <ul>
+            <li class="form-group">
+                <input type="checkbox" class="form-check-input" disabled checked>
+                <label class="form-check-label">Listado de Viajes por Año</label>
+            </li>
+            <li class="form-group">
+                <input type="checkbox" class="form-check-input" disabled checked>
+                <label class="form-check-label">Listado de Viajes por Conductor y Año</label>
+            </li>
+            <li class="form-group">
+                <input type="checkbox" class="form-check-input" disabled checked>
+                <label class="form-check-label">Listado de Viajes por Vehículo y Año</label>
+            </li>
+        </ul>
+    </div>
+    <div class="col-sm-12">
+        <h4>Parte 2</h4>
+        <hr />
+        <p>Implemente un Controller llamado <i>VehiculoController</i>, y defina los Methods para realizar el <i>CRUD de Vehículos</i>.</p>
+        <ul>
+            <li class="form-group">
+                <input type="checkbox" class="form-check-input" disabled checked>
+                <label class="form-check-label">Listado General de Vehículos</label>
+            </li>
+            <li class="form-group">
+                <input type="checkbox" class="form-check-input" disabled checked>
+                <label class="form-check-label">Registro de Nuevo Vehículo</label>
+            </li>
+            <li class="form-group">
+                <input type="checkbox" class="form-check-input" disabled checked>
+                <label class="form-check-label">Actualización de Vehículo</label>
+            </li>
+            <li class="form-group">
+                <input type="checkbox" class="form-check-input" disabled checked>
+                <label class="form-check-label">Detalle de Vehículo</label>
+            </li>
+            <li class="form-group">
+                <input type="checkbox" class="form-check-input" disabled checked>
+                <label class="form-check-label">Eliminación de Vehículo</label>
+            </li>
+        </ul>
     </div>
 </div>
